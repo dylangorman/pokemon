@@ -2,11 +2,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "pokemon hollow", "nunito";
+  font-family: pokemon hollow, nunito, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #013a6b;
   background-image: -webkit-linear-gradient(70deg, #dd7373 50%, #ead94c 50%);
+}
+h1 {
+  font-size: 50px;
 }
 .app-contaner {
   display: flex;
@@ -64,7 +67,6 @@ h3 {
 .thumb-container .number {
   border-radius: 1rem;
   padding: 0.2rem 0.4rem;
-  background-color: rgba(255, 255, 255, 0.3);
 }
 .thumb-container img {
   width: 120px;
