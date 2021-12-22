@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  font-family: "pokemon hollow";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rock {
+  background-color: rgb(148, 81, 81);
+}
+.ghost {
+  background-color: rgb(247, 247, 247);
+}
+.electric {
+  background-color: rgb(255, 255, 161);
+}
+.bug {
+  background-color: #f6d6a7;
+}
+.poison {
+  background-color: #e0a7f6;
+}
+.normal {
+  background-color: #f4f4f4;
+}
+.fairy {
+  background-color: rgba(255, 192, 203, 0.863);
+}
+.fire {
+  background-color: #fbe3df;
+}
+.grass {
+  background-color: #e2f9e1;
+}
+.water {
+  background-color: #e0f1fd;
+}
+
+.app-contaner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem 0.5rem;
+}
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-container {
+  display: flex;
+
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.info {
+  border-radius: 10px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 33.3333%;
+  align-items: center;
+  justify-content: center;
+}
+.thumb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  margin: 0.3rem;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+h3 {
+  margin-bottom: 0.2rem;
+}
+.thumb-container .number {
+  border-radius: 1rem;
+  padding: 0.2rem 0.4rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.thumb-container img {
+  width: 120px;
+  height: 120px;
+}
+.thumb-container small {
+  text-transform: capitalize;
+}
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.detail-wrapper button {
+  color: rgb(22, 22, 22);
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.185);
+}
+.load-more {
+  background: #f5f5f5 linear-gradient(#f5f5f5, #f1f1f1) repeat-x;
+  border-radius: 2px;
+  border: 1px solid #c6c6c6;
+  color: #444;
+  padding: 0.5rem 1.5rem;
+  min-width: 50%;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 510px) {
+  .info {
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .thumb-container {
+    position: relative;
+    left: 40px;
+    max-width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+  }
+  .thumb-container img {
+    width: 350px;
+    height: 250px;
+  }
+  .thumb-container .number {
+    font-size: 60px;
+    width: 70px;
+    height: 70px;
+  }
+  .thumb-container h3 {
+    font-size: 30px;
+  }
+  .thumb-container span {
+    font-size: 30px;
+  }
+}
+
+/* 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pokemon Hollow";
+} */
+/* 
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.pokemon-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 300px;
+  max-width: 400px;
+  background-color: #d1d1d1;
+  border: solid #3b3561;
+  border-width: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgb(0, 0, 0, 1);
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1;
+  border-width: 5px;
+  border: solid;
+  border-radius: 10px 10px 0px 0px;
+}
+.thumb-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.thumb-container:hover {
+  opacity: 0.7;
+}
+img {
+  background-color: #51a3a3;
+  border-radius: 30%;
+  box-shadow: cornflowerblue;
+  box-shadow: 0px 2px 30px rgb(0, 0, 0, 1);
+  padding: 10px;
+
+  width: 100px;
+}
+body {
+  background-color: #013a6b;
+  background-image: -webkit-linear-gradient(70deg, #dd7373 50%, #ead94c 50%);
+}
+h1 {
+  font-family: "Pokemon Hollow";
+  font-size: 35px;
+  text-align: center;
+  background-color: #ead94c;
+  border-radius: 50px;
+}
+.load-more {
+  position: relative;
+  left: 40px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+}
+.info {
+  color: #013a6b;
+  text-align: center;
+  left: 30px;
+  cursor: pointer;
+}
+button {
+  background-color: #013a6b;
+  color: #ead94c;
+}
+button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+} */
